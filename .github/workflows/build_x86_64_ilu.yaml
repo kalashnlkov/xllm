@@ -119,4 +119,4 @@ jobs:
       timeout-minutes: 60
       run: |
         chmod +x ./cibuild/build_ilu.sh
-        bash cibuild/build_ilu.sh 'pip3 install pre-commit -i https://pypi.tuna.tsinghua.edu.cn/simple && python3 setup.py build --device ilu'
+        bash cibuild/build_ilu.sh "git config --global --add safe.directory '*' && pip install pre-commit -i https://pypi.tuna.tsinghua.edu.cn/simple && python setup.py build --device ilu"

@@ -11,7 +11,6 @@ COREX_VERSION="4.4.0.20251023"
 IMAGE="${REGISTRY}/xllm-builder:${COREX_VERSION}-ubuntu22.04-py310-xllm-x86_64"
 
 RUN_OPTS=(
-  --rm
   -t
   --privileged
   --ipc=host
